@@ -1,0 +1,17 @@
+/* variables start */
+$main-link-bg-color: #00bafc;
+$main-color-black: #000;
+$main-color-white: #fff;
+$main-font-family: "Open Sans";
+$main-font-weight-400: 400;
+$main-font-weight-700: 700;
+
+:root {
+   --main-link-bg-color: #{$main-link-bg-color};
+   --main-color-black: #{$main-color-black};
+   --main-color-white: #{$main-color-white};
+   --main-font-family: #{$main-font-family};
+   --main-font-weight-400: #{$main-font-weight-400};
+   --main-font-weight-700: #{$main-font-weight-700};
+}
+/* variables finish */
