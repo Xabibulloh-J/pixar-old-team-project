@@ -1,5 +1,5 @@
 /* mixins start */
-@mixin list-unstyled($m-top, $m-bottom,) {
+@mixin list-unstyled($m-top, $m-bottom) {
    margin-top: $m-top;
    margin-bottom: $m-bottom;
    padding-left: 0;

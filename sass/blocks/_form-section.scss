@@ -1,0 +1,89 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.form-section {
+  padding-top: 56px;
+  padding-bottom: 64px;
+  background-color: var(--main-link-bg-color);
+}
+
+.form-section__wrapper {
+  width: 719px;
+  margin: 0 auto 24px;
+}
+
+.form-section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: var(--main-font-weight-700);
+  line-height: 31px;
+  text-align: center;
+  color: var(--main-color-white);
+}
+
+.form-section__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-400);
+  line-height: 24px;
+  text-align: center;
+  color: var(--main-color-white);
+}
+
+.form-section__form {
+  display: block;
+  width: 348px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 5px;
+  background-color: var(--main-color-white);
+}
+
+.form-section__input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+.form-section__input::placeholder {
+  font-size: 16px;
+  font-weight: var(--main-font-weight-400);
+  line-height: 24px;
+  color: var(--main-color-black);
+}
+
+.form-section__select {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-400);
+  line-height: 24px;
+  color: var(--main-color-black);
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  appearance: none;
+  background-image: url("../images/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 264px 18px;
+}
+
+.form-section__btn {
+  @include m.link-unstyled (block, var(--main-color-white));
+  width: 167px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-700);
+  line-height: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-link-bg-color);
+}
