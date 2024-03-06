@@ -1,0 +1,123 @@
+@use "../variables" as *;
+@use "../mixins" as m;
+
+/* footer start */
+.site-footer {
+   padding-top: 56px;
+   padding-bottom: 56px;
+   background-color: #191919;
+
+   &__box {
+      display: flex;
+      align-items: flex-start;
+   }
+
+   &__text-wrapper {
+      width: 320px;
+      margin-right: 100px;
+
+      &::before {
+         content: "Copyright 2020";
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 26px;
+         color: #fff;
+      }
+   }
+
+   &__desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #fff;
+   }
+
+   &__pages-wrapper {
+      margin-right: 87px;
+   }
+
+   &__box-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+      color: #fff;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      @include m.list-unstyled(16px, 0);
+   }
+
+   &__item-link {
+      @include m.link-unstyled(inline-block, var(--main-color-white));
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #fff;
+
+      &:hover {
+         color: #00bafc;
+      }
+
+      &:active {
+         color: #00bafc;
+         opacity: 0.6;
+      }
+   }
+
+   &__social-link {
+      @include m.link-unstyled(inline-block, var(--main-color-white));
+      padding-left: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      
+      &:hover {
+         color: #00bafc;
+      }
+
+      &:active {
+         color: #00bafc;
+         opacity: 0.6;
+      }
+   }
+
+   &__social-item:nth-child(1) .site-footer__social-link {
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+      background-image: url("/images/telegram.svg");
+      background-size: 22px 24px;
+      background-repeat: no-repeat;
+      content: "";
+   }
+
+   &__social-item:nth-child(2) .site-footer__social-link {
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+      background-image: url("/images/facebook.svg");
+      background-size: 22px 24px;
+      background-repeat: no-repeat;
+      content: "";
+   }
+
+   &__social-item:nth-child(3) .site-footer__social-link {
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+      background-image: url("/images/instagram.svg");
+      background-size: 22px 24px;
+      background-repeat: no-repeat;
+      content: "";
+   }
+}
+/* footer finish */

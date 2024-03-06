@@ -1,0 +1,118 @@
+@use "../mixins" as m;
+
+/* section two start */
+.contact {
+   padding-top: 56px;
+   padding-bottom: 56px;
+   background-color: #00bafc;
+
+   &__title-wrapper {
+      width: 719px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 31.2px;
+      color: #fff;
+   }
+
+   &__desc {
+      margin-top: 0;
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+   }
+
+   &__inputs-wrapper {
+      position: relative;
+      width: 348px;
+      margin: 0 auto;
+      padding: 24px;
+      background-color: #fff;
+   }
+
+   &__input {
+      width: 300px;
+      margin-bottom: 16px;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      border-radius: 5px;
+      padding: 16px;
+      background-color: #f3f3f3;
+
+      &::placeholder {
+         font-family: "Open Sans";
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 24px;
+         color: #000;
+      }
+   }
+
+   &__input-select {
+      width: 300px;
+      margin-bottom: 16px;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      border-radius: 5px;
+      padding: 16px;
+      background-image: url("../images/contactarrowbottom.svg");
+      background-size: 16px;
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-color: #f3f3f3;
+
+      &::placeholder {
+         font-family: "Open Sans";
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 24px;
+         color: #000;
+      }
+   }
+
+   &__select-btn {
+      position: absolute;
+      right: 23px;
+      width: 56px;
+      height: 56px;
+      border: none;
+      background-color: transparent;
+      @include m.background-img(url("/images/services-arrow-bottom.svg"), 56px 56px, no-repeat, center, center);
+   }
+
+   &__btn {
+      margin: 0 auto;
+      display: block;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 16px;
+      background-color: #00bafc;
+      color: #fff;
+
+      &:hover {
+         background-color: #00bafccc;
+      }
+      &:active {
+         background: #00bafc99;
+      }
+   }
+}
+/* section two finish */
