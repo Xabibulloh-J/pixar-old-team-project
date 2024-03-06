@@ -87,3 +87,11 @@
   border-radius: 5px;
   background-color: var(--main-link-bg-color);
 }
+
+.form-section__btn:hover {
+  opacity: 0.8;
+}
+
+.form-section__btn:active {
+  opacity: 0.6;
+}

@@ -516,12 +516,12 @@ img {
 }
 
 /* header finish */
-.hero {
-  padding-top: 80px;
+.site-hero {
+  padding-top: 136px;
   padding-bottom: 80px;
 }
 
-.hero__inner {
+.site-hero__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,11 +533,11 @@ img {
           align-items: center;
 }
 
-.hero__wrapper {
+.site-hero__wrapper {
   max-width: 470px;
 }
 
-.hero__title {
+.site-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 30px;
@@ -546,7 +546,7 @@ img {
   color: var(--main-color-black);
 }
 
-.hero__text {
+.site-hero__text {
   margin-top: 0;
   font-size: 16px;
   font-weight: var(--main-font-weight-400);
@@ -554,7 +554,7 @@ img {
   color: var(--main-color-black);
 }
 
-.hero__link {
+.site-hero__link {
   padding: 8px 16px;
   font-size: 16px;
   font-weight: var(--main-font-weight-700);
@@ -564,6 +564,14 @@ img {
   color: var(--main-color-white);
   border-radius: 5px;
   background-color: var(--main-link-bg-color);
+}
+
+.site-hero__link:hover {
+  opacity: 0.8;
+}
+
+.site-hero__link:active {
+  opacity: 0.6;
 }
 
 /* section one start */
@@ -754,6 +762,16 @@ img {
           box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
+.service-section__item:hover {
+  -webkit-box-shadow: 0px 12px 21px 0px rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 0px 12px 21px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+.service-section__item:active {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
 .service-section__item:first-child::before {
   display: block;
   width: 203px;
@@ -854,6 +872,14 @@ img {
   display: inline-block;
   text-decoration-line: none;
   color: var(--main-color-white);
+}
+
+.service-section__item-link:hover {
+  opacity: 0.8;
+}
+
+.service-section__item-link:active {
+  opacity: 0.6;
 }
 
 .service-section__link {
@@ -973,6 +999,14 @@ img {
   background-color: var(--main-link-bg-color);
 }
 
+.about-section__link:hover {
+  opacity: 0.8;
+}
+
+.about-section__link:active {
+  opacity: 0.6;
+}
+
 .form-section {
   padding-top: 56px;
   padding-bottom: 64px;
@@ -1090,6 +1124,14 @@ img {
   border: none;
   border-radius: 5px;
   background-color: var(--main-link-bg-color);
+}
+
+.form-section__btn:hover {
+  opacity: 0.8;
+}
+
+.form-section__btn:active {
+  opacity: 0.6;
 }
 
 /* section two start */

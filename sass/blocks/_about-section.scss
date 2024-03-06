@@ -84,3 +84,11 @@
   border-radius: 5px;
   background-color: var(--main-link-bg-color);
 }
+
+.about-section__link:hover {
+  opacity: 0.8;
+}
+
+.about-section__link:active {
+  opacity: 0.6;
+}

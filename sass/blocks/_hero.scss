@@ -1,20 +1,20 @@
 @use "../variables" as *;
 @use "../mixins" as m;
 
-.hero {
-  padding-top: 80px;
+.site-hero {
+  padding-top: 136px;
   padding-bottom: 80px;
 }
 
-.hero__inner {
+.site-hero__inner {
   @include m.flexbox($display: flex, $direction: null, $justify: space-between, $align: center, $row: null, $column: null);
 }
 
-.hero__wrapper {
+.site-hero__wrapper {
   max-width: 470px;
 }
 
-.hero__title {
+.site-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 30px;
@@ -23,7 +23,7 @@
   color: var(--main-color-black);
 }
 
-.hero__text {
+.site-hero__text {
   margin-top: 0;
   font-size: 16px;
   font-weight: var(--main-font-weight-400);
@@ -31,7 +31,7 @@
   color: var(--main-color-black);
 }
 
-.hero__link {
+.site-hero__link {
   padding: 8px 16px;
   font-size: 16px;
   font-weight: var(--main-font-weight-700);
@@ -39,6 +39,14 @@
   @include m.link-unstyled(inline-block, var(--main-color-white));
   border-radius: 5px;
   background-color: var(--main-link-bg-color);
+}
+
+.site-hero__link:hover {
+   opacity: 0.8;
+}
+
+.site-hero__link:active {
+   opacity: 0.6;
 }
 
 /* section one start */
