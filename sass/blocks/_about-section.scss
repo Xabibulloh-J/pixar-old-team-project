@@ -1,0 +1,86 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+
+.about-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.about-section__wrapper {
+  max-width: 719px;
+  margin: 0 auto 24px;
+}
+
+.about-section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: var(--main-font-weight-700);
+  line-height: 31px;
+  text-align: center;
+  color: var(--main-color-black);
+}
+
+.about-section__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-400);
+  line-height: 24px;
+  text-align: center;
+  color: var(--main-color-black);
+}
+
+.about-section__list {
+  @include m.flexbox(flex, column, null, center, 48px, null);
+  @include m.list-unstyled (0, 48px);
+}
+
+.about-section__item {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+
+.about-section__item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.about-section__item:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+
+.about-section__inner {
+  width: 500px;
+}
+
+.about-section__item-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: var(--main-font-weight-700);
+  line-height: 26px;
+  color: var(--main-color-black);
+}
+
+.about-section__item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-400);
+  line-height: 24px;
+  color: var(--main-color-black);
+}
+
+.about-section__link {
+  @include m.link-unstyled (block, var(--main-color-white));
+  width: 167px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: var(--main-font-weight-700);
+  line-height: 24px;
+  border-radius: 5px;
+  background-color: var(--main-link-bg-color);
+}

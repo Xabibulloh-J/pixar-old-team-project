@@ -15,6 +15,7 @@ body {
    height: 100%;
    font-family: var(--main-font-family);
    font-weight: var(--main-font-weight-700);
+   scroll-behavior: smooth;
 }
 main {
    flex-grow: 1;
